@@ -2,6 +2,7 @@ from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import *
 from random import randint
 
+
 def test():
     text.setText(str(randint(3, 2000)))
 
