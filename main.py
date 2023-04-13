@@ -3,7 +3,7 @@ from PyQt5.QtWidgets import *
 from random import randint
 
 def test():
-    text.setText(str(randint(1, 1000)))
+    text.setText(str(randint(1, 2000)))
 
 app = QApplication([])
 win = QWidget()
@@ -13,7 +13,7 @@ line = QVBoxLayout()
 text = QLabel()
 line.addWidget(text, alignment= Qt.AlignCenter)
 
-random_btn = QPushButton('выбрать победителя')
+random_btn = QPushButton('выбрать случайное число')
 random_btn.clicked.connect(test)
 line.addWidget(random_btn)
 
